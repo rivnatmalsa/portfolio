@@ -33,9 +33,11 @@ const config = {
    },
     resolve:{
         alias: {
-            
+          initialize: path.join(__dirname, '/app/js/initialize'),
+          morphext: path.join(__dirname, "app/js/morphext.min"),
+          rotateTitle: path.join(__dirname, "app/js/rotate-title"),
         },
-        extensions: ['.json', '.js']
+        extensions: ['.json', '.js', '.css']
     },
     stats:{
         colors: true,
@@ -52,6 +54,13 @@ const config = {
                     use: 'css-loader'
                 })
             },
+            {
+                test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+                loader: 'url-loader',
+                options: {
+                    limit: 10000
+                } 
+            }
         ]
     }
 }

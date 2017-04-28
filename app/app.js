@@ -1,1 +1,6 @@
-$('main').append("<h1>Tanvir Aslam</h1>");
+import "morphext";
+import initalize from "initialize";
+
+$(()=>{
+    initalize();
+});

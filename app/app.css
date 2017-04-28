@@ -1,3 +1,9 @@
-body{
-    color: red;
-}
+@import "../node_modules/normalize.css/normalize.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap-theme.min.css";
+@import "./css/libs/animate.css";
+@import "./css/libs/morphext.css";
+@import "./css/base/_global.css";
+@import "./css/modules/_home.css";
+@import "./css/modules/_centerpiece.css";
+@import "./css/modules/_social.css";

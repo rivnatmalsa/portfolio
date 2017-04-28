@@ -1,0 +1,78 @@
+/* Center Piece*/
+.centerpiece{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+}
+
+.centerpiece h1{
+    color: white;
+    font-size: 66px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -4px;
+}
+
+.centerpiece p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+#title-rotate{
+    color: white;
+    font-size: 78px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -4px;
+}
+
+a.btn-custom{
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    box-shadow: 0px 0px 4px black;
+    transition: all 0.5s linear;
+    width: 170px;
+}
+
+a.btn-custom:hover{
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.project-btn{
+    background-color: #c80a48;
+}
+
+.resume-btn{
+    background-color: yellowgreen;
+}
+
+.centerpiece p.name{
+    color: white;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.blink{
+    animation: blink 1s linear infinite;
+}
+
+/*Center Piece Animations*/
+@keyframes blink{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+.v-align-transform{
+    position: relative;
+    transform: translate3d(0, -50%, 0);
+    top: 40%;
+    z-index: 3;
+}
