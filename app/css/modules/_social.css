@@ -12,6 +12,7 @@
     width: 100%;
     text-align: center;
     list-style: none;
+    padding: 0;
 }
 
 .social ul li{
@@ -28,4 +29,11 @@
 .social ul li a:hover{
     cursor: pointer;
     text-shadow: 0px 0px 40px beige;
+}
+
+/*Media Queries for Social*/
+@media screen and (max-width: 480px){
+    .social li{
+        font-size: 0.75em;
+    }
 }

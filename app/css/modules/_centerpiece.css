@@ -8,10 +8,10 @@
 
 .centerpiece h1{
     color: white;
-    font-size: 66px;
+    font-size: 33px;
     font-weight: 400;
     font-family: 'Raleway', sans-serif;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
 }
 
 .centerpiece p{
@@ -19,14 +19,15 @@
     font-size: 20px;
     color: white;
     font-family: 'Lato', sans-serif;
+    display: none
 }
 
 #title-rotate{
     color: white;
-    font-size: 78px;
+    font-size: 27px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
 }
 
 a.btn-custom{
@@ -76,3 +77,76 @@ a.btn-custom:hover{
     top: 40%;
     z-index: 3;
 }
+
+/*Center Piece Media Queries*/
+@media screen and (min-width: 1200px){
+    #title-rotate{
+        font-size: 78px;
+        letter-spacing: -4px;
+    }
+
+    .centerpiece h1{
+        font-size: 66px;
+        letter-spacing: -4px;
+    }
+
+    .centerpiece p{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 1200px){
+    #title-rotate{
+        font-size: 50px;
+        letter-spacing: -4px;
+    }
+
+    .centerpiece h1{
+        font-size: 45px;
+        padding-bottom: 10px;
+        letter-spacing: -4px;
+    }
+
+    .centerpiece p{
+        font-size: 17px;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 680px){
+    #title-rotate{
+        font-size: 43px;
+        letter-spacing: -4px;
+    }
+
+    .centerpiece h1{
+        font-size: 37px;
+        padding-bottom: 10px;
+        letter-spacing: -4px;
+    }
+
+    .centerpiece p{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 580px){
+    #title-rotate{
+        font-size: 33px;
+        letter-spacing: -2px;
+    }
+
+    .centerpiece h1{
+        font-size: 33px;
+        padding-bottom: 15px;
+        letter-spacing: -2px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .centerpiece h1{
+        padding-bottom: 20px;
+    }
+}
+
