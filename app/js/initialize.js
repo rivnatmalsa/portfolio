@@ -10,7 +10,8 @@ const initialize = ()=>{
     // Temporary code -- Removed after blog and project sections are up.
     const btns = document.querySelectorAll('.btn-custom');
     btns.forEach(btn=>{
-        btn.addEventListener('click', ()=>{
+        btn.addEventListener('click', (e)=>{
+            e.preventDefault();
             swal({
                 title: "Under Construction",
                 text: "This section is under construction! Will be up soon!",
